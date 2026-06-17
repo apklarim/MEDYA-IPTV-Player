@@ -1,5 +1,6 @@
 package com.medya.iptvplayer
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.btnLive).setOnClickListener {
-            Toast.makeText(this, "CANLI TV", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, LiveTvActivity::class.java))
         }
 
         findViewById<Button>(R.id.btnMovies).setOnClickListener {
