@@ -17,7 +17,27 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Show Project Structure
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Grant execute permission
+        run: chmod +x gradlew || true
+
+      - name: Show project structure
+        run: find .
+
+      - name: Build APK
         run: |
-          echo "MEDYA IPTV Player Build"
-          find .
+          if [ -f "./gradlew" ]; then
+            ./gradlew assembleDebug --stacktrace
+          else
+            gradle assembleDebug --stacktrace
+          fi
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MEDYA-IPTV-Player-APK
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            **/*.apk
