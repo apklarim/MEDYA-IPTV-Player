@@ -1,0 +1,4 @@
+cat > app/src/main/java/com/medya/iptvplayer/M3uActivity.ktcat > app/src/main/java/com/medya/iptvplayer/M3uActivity.kt
+[3~
+cat > app/src/main/java/com/medya/iptvplayer/M3uActivity.kt
+cp app/src/main/java/com/medya/iptvplayer/M3uActivity.kt app/src/main/java/com/medya/iptvplayer/M3uActivity.kt.bak
