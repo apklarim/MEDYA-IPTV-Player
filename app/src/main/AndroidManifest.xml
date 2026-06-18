@@ -8,6 +8,7 @@
         <activity android:name=".XtreamActivity" />
         <activity android:name=".MagActivity" />
         <activity android:name=".LiveTvActivity" />
+        <activity android:name=".ChannelListActivity" />
 
         <activity
             android:name=".MainActivity"
