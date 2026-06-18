@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.medya.iptvplayer">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="MEDYA IPTV Player"
-        android:theme="@style/Theme.MedyaIPTV">
+        android:label="MEDYA IPTV Player">
+
+        <activity android:name=".M3uActivity" />
+        <activity android:name=".XtreamActivity" />
+        <activity android:name=".MagActivity" />
+        <activity android:name=".LiveTvActivity" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
 
-    <activity android:name=".LiveTvActivity" />
-        <activity android:name=".ChannelListActivity" />
     </application>
 
 </manifest>
