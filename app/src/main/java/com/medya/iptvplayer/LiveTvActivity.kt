@@ -22,5 +22,17 @@ class LiveTvActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnMag).setOnClickListener {
             startActivity(Intent(this, MagActivity::class.java))
         }
+
+        findViewById<Button>(R.id.btnFavorites).setOnClickListener {
+            startActivity(Intent(this, ChannelListActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnGroups).setOnClickListener {
+            startActivity(Intent(this, ChannelListActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnChannels).setOnClickListener {
+            startActivity(Intent(this, ChannelListActivity::class.java))
+        }
     }
 }
