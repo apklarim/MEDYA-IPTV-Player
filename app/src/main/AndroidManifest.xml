@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="MEDYA IPTV Player">
+        android:label="MEDYA IPTV Player"
+        android:theme="@style/Theme.MedyaIPTV">
 
         <activity android:name=".M3uActivity" />
         <activity android:name=".XtreamActivity" />
