@@ -19,8 +19,15 @@
         android:hint="M3U URL"/>
 
     <Button
+        android:id="@+id/btnPickM3u"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="M3U DOSYASI SEÇ"/>
+
+    <Button
         android:id="@+id/btnSaveM3u"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="KAYDET"/>
+
 </LinearLayout>
